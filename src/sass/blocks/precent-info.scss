@@ -1,0 +1,28 @@
+.percent-info {
+    background-color: $gray-300;
+    padding: 22px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.percent-info__text {
+    margin: 0;
+    color: $gray-600;
+}
+
+.percent-info__text--title {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.percent-info__text--info {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.percent-info__percent {
+    color: $black;
+    font-size: 24px;
+    line-height: 28px;
+}
