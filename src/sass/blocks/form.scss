@@ -1,91 +1,91 @@
 .form {
-    outline-offset: -2px;
-    padding: 0;
-    margin: 0;
+  outline-offset: -2px;
+  padding: 0;
+  margin: 0;
 }
 
 .form__wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .form__label {
-    font-size: 18px;
-    line-height: 21px;
-    color: $gray-600;
-    display: block;
-    margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  color: $gray-600;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .form__input-container {
-    position: relative;
-    margin-top: 40px;
+  position: relative;
+  margin-top: 40px;
 }
 
 .form__input-container:first-child {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .form__input {
-    font-size: 16px;
-    line-height: 21px;
-    width: 100%;
-    padding: 15px 40px;
-    border: 2px solid $gray-400;
-    border-radius: 9px;
-    cursor: pointer;
+  font-size: 16px;
+  line-height: 21px;
+  width: 100%;
+  padding: 15px 40px;
+  border: 2px solid $gray-400;
+  border-radius: 9px;
+  cursor: pointer;
 }
 
 .form__input--amount {
-    padding-right: 76px;
+  padding-right: 76px;
 }
 
 .form__input--date {
-    font-size: 18px;
-    line-height: 21px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .form__input-description {
-    position: absolute;
-    right: 40px;
-    bottom: 18px;
-    display: block;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 500;
-    text-align: right;
-    color: $gray-600;
-    width: 26px;
-    height: 18px;
-    user-select: none;
+  position: absolute;
+  right: 40px;
+  bottom: 18px;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: right;
+  color: $gray-600;
+  width: 26px;
+  height: 18px;
+  user-select: none;
 }
 
 .form__select {
-    font-size: 16px;
-    line-height: 21px;
-    appearance: none;
-    background-image: url("/img/icon-select.svg");
-    background-repeat: no-repeat;
-    background-position: top 50% right 32px;
+  font-size: 16px;
+  line-height: 21px;
+  appearance: none;
+  background-image: url("/img/icon-select.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 32px;
 }
 
 .form__select:focus {
-    background-color: $gray-400;
+  background-color: $gray-400;
 }
 
 .form__cholice-list {
-    margin-top: 40px;
-    margin-bottom: 0px;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .form__range-filter {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .form__percent-info {
-    margin-top: 42px;
+  margin-top: 42px;
 }
 
 .form__submit-info {
-    margin-top: 40px;
+  margin-top: 40px;
 }
