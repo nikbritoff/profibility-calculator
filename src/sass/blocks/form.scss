@@ -14,7 +14,7 @@
   line-height: 21px;
   color: $gray-600;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .form__input-container {
@@ -27,10 +27,11 @@
 }
 
 .form__input {
+  font-family: inherit;
   font-size: 16px;
   line-height: 21px;
   width: 100%;
-  padding: 15px 40px;
+  padding: 12px 18px;
   border: 2px solid $gray-400;
   border-radius: 9px;
   cursor: pointer;
@@ -47,8 +48,8 @@
 
 .form__input-description {
   position: absolute;
-  right: 40px;
-  bottom: 18px;
+  right: 20px;
+  bottom: 15px;
   display: block;
   font-size: 14px;
   line-height: 18px;
@@ -66,7 +67,7 @@
   appearance: none;
   background-image: url("/img/icon-select.svg");
   background-repeat: no-repeat;
-  background-position: top 50% right 32px;
+  background-position: top 50% right 20px;
 }
 
 .form__select:focus {
@@ -74,7 +75,7 @@
 }
 
 .form__cholice-list {
-  margin-top: 40px;
+  margin-top: 25px;
   margin-bottom: 0;
 }
 
