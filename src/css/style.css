@@ -64,7 +64,7 @@
 
 .header__logo {
   display: flex;
-  width: 48px;
+  width: 55px;
   height: 48px;
   border-radius: 9px;
   background-color: #fbed10;
@@ -365,6 +365,10 @@
   display: flex;
   justify-content: flex-start;
   list-style: none;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> f5aa10761982dd03bc490562babc443bf1902c77
   padding: 10px 0;
 }
 
