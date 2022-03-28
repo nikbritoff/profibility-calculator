@@ -5,6 +5,14 @@
   padding-top: 14px;
 }
 
+.range-filter--amount {
+  display: none;
+
+  @media (min-width: $wide-mobile-width) {
+    display: flex;
+  }
+}
+
 .range-filter__bar {
   position: relative;
   width: 100%;
@@ -20,7 +28,7 @@
   background-color: $white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   top: -14px;
-  left: 14px;
+  left: 65px;
 }
 
 .range-filter__values-list {

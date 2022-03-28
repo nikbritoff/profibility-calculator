@@ -2,14 +2,41 @@
   background-color: $gray-300;
   padding-top: 40px;
   padding-bottom: 72px;
+
+  @media (min-width: $wide-tablet-width) {
+    padding-top: 174px;
+  }
 }
 
 .submit-info__wrapper {
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.submit-info__scales {
+  display: none;
+
+  @media (min-width: $wide-tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    align-items: end;
+  }
 }
 
 .submit-info__button {
+  font-family: inherit;
   font-size: 14px;
   line-height: 16px;
   font-weight: 900;
@@ -18,17 +45,28 @@
   width: 100%;
   padding: 20px;
   border: none;
-  border-radius: 0 90px 0 61px;
+  border-radius: 0 90px 0 90px;
   margin-top: 22px;
   cursor: pointer;
+
+  @media (min-width: $wide-mobile-width) {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .submit-info__button:hover {
   background-color: $black;
-  color: $white;
+  color: $primary-yellow;
 }
 
 .submit-info__button:active {
   background-color: $gray-600;
-  color: $white;
+  // color: $white;
 }

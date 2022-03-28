@@ -1,8 +1,12 @@
 .percent-info {
   background-color: $gray-300;
-  padding: 22px 20px;
+  padding: 22px 25px 22px 20px;
   border-radius: 15px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .percent-info__text {
@@ -19,6 +23,7 @@
   font-size: 14px;
   line-height: 16px;
   margin-top: 10px;
+  font-weight: 700;
 }
 
 .percent-info__percent {

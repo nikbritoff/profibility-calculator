@@ -1,131 +1,169 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор доходности</title>    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#FBED10">
-    <meta name="msapplication-TileColor" content="#da532c"/>
-    <meta name="theme-color" content="#fbed10"/>
-</head>    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор доходности</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#FBED10">
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#fbed10" />
+</head>
+
 <body class="page__body">
-    <header class="page__header header">
-        <a class="header__logo" href="/">
-            <img
-                class="header__logo-icon"
-                src="img/logo-calculator.svg"
-                width="25"
-                height="29"
-                alt="Калькулятор доходности"
-            >
-        </a>
-        <h1 class="header__title">Калькулятор доходности</h1>
-    </header>
 
-    <main class="page__main">
-        <form class="form">
-            <div class="form__wrapper">
-                <div class="form__input-container">
-                    <label class="form__label">Тип дипозита</label>
-                    <select class="form__input form__select">
-                        <option value="stantard">Stantard</option>
-                        <option value="extention">Extention</option>
-                    </select>
+
+
+  <main class="page__main">
+
+    <form class="form">
+      <div class="form__block form__block--main">
+        <div class="form__wrapper">
+
+          <header class="form__header header">
+            <a class="header__logo" href="/">
+              <img class="header__logo-icon" src="img/logo-calculator.svg" width="25" height="29"
+                alt="Калькулятор доходности">
+            </a>
+            <h1 class="header__title">Калькулятор доходности</h1>
+          </header>
+
+          <div class="form__group form__group--first">
+            <fieldset class="form__input-container form__input-container--select">
+              <label class="form__label">Тип дипозита</label>
+              <select class="form__input form__select">
+                <option value="stantard">Stantard</option>
+                <option value="extention">Extention</option>
+              </select>
+            </fieldset>
+            <ul class="form__cholice-list choice-list">
+              <li class="choice-list__item choice-item">
+                <input class="choice-item__radio visually-hidden" type="radio" id="btc" name="valute" checked>
+                <label class="choice-item__lable" for="btc">Btc</label>
+              </li>
+              <li class="choice-list__item choice-item">
+                <input class="choice-item__radio visually-hidden" type="radio" id="uah" name="valute">
+                <label class="choice-item__lable" for="uah">Uah</label>
+              </li>
+              <li class="choice-list__item choice-item">
+                <input class="choice-item__radio visually-hidden" type="radio" id="rub" name="valute">
+                <label class="choice-item__lable" for="rub">Rub</label>
+              </li>
+              <li class="choice-list__item choice-item">
+                <input class="choice-item__radio visually-hidden" type="radio" id="eur" name="valute">
+                <label class="choice-item__lable" for="eur">Eur</label>
+              </li>
+              <li class="choice-list__item choice-item">
+                <input class="choice-item__radio visually-hidden" type="radio" id="usd" name="valute">
+                <label class="choice-item__lable" for="usd">Usd</label>
+              </li>
+            </ul>
+          </div>
+
+          <fieldset class="form__input-container form__input-container--amount form__input-container--all-width">
+            <label class="form__label" for="amount">Сумма инвестиций</label>
+            <input class="form__input form__input--amount" type="text" name="amount" id="amount" value="10,000">
+            <span class="form__input-description">BTC</span>
+
+            <div class="form__range-filter range-filter range-filter--amount">
+              <div class="range-filter__bar">
+                <div class="range-filter__toggle"></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form__group">
+            <fieldset class="form__input-container form__input-container--duration">
+              <label class="form__label">Срок инвестиций ( Месяцев )</label>
+              <div class="form__range-filter range-filter">
+                <div class="range-filter__bar">
+                  <div class="range-filter__toggle"></div>
                 </div>
-                <ul class="form__cholice-list choice-list">
-                    <li class="choice-list__item choice-item">
-                        <input class="choice-item__radio visually-hidden" type="radio" id="btc" name="valute" checked>
-                        <label class="choice-item__lable" for="btc">Btc</label>
-                    </li>
-                    <li class="choice-list__item choice-item">
-                        <input class="choice-item__radio visually-hidden" type="radio" id="uah" name="valute">
-                        <label class="choice-item__lable" for="uah">Uah</label>
-                    </li>
-                    <li class="choice-list__item choice-item">
-                        <input class="choice-item__radio visually-hidden" type="radio" id="rub" name="valute">
-                        <label class="choice-item__lable" for="rub">Rub</label>
-                    </li>
-                    <li class="choice-list__item choice-item">
-                        <input class="choice-item__radio visually-hidden" type="radio" id="eur" name="valute">
-                        <label class="choice-item__lable" for="eur">Eur</label>
-                    </li>
-                    <li class="choice-list__item choice-item">
-                        <input class="choice-item__radio visually-hidden" type="radio" id="usd" name="valute">
-                        <label class="choice-item__lable" for="usd">Usd</label>
-                    </li>
+                <ul class="range-filter__values-list">
+                  <li class="range-filter__values-item">1</li>
+                  <li class="range-filter__values-item">3</li>
+                  <li class="range-filter__values-item">2</li>
+                  <li class="range-filter__values-item range-filter__values-item--current">4</li>
+                  <li class="range-filter__values-item">5</li>
+                  <li class="range-filter__values-item">6</li>
+                  <li class="range-filter__values-item">7</li>
+                  <li class="range-filter__values-item">8</li>
+                  <li class="range-filter__values-item">9</li>
+                  <li class="range-filter__values-item">10</li>
+                  <li class="range-filter__values-item">11</li>
+                  <li class="range-filter__values-item">12</li>
                 </ul>
-                
-                <div class="form__input-container form__input-container--amount">
-                    <label class="form__label" for="amount">Сумма инвестиций</label>
-                    <input class="form__input form__input--amount" type="text" name="amount" id="amount" value="10,000">
-                    <span class="form__input-description">BTC</span>
-                </div>
-            
-                <div class="form__input-container">
-                    <label class="form__label">Срок инвестиций ( Месяцев )</label>
-                    <div class="form__range-filter range-filter">
-                        <div class="range-filter__bar">
-                            <div class="range-filter__toggle"></div>
-                        </div>
-                        <ul class="range-filter__values-list">
-                            <li class="range-filter__values-item">1</li>
-                            <li class="range-filter__values-item">3</li>
-                            <li class="range-filter__values-item">2</li>
-                            <li class="range-filter__values-item range-filter__values-item--current">4</li>
-                            <li class="range-filter__values-item">5</li>
-                            <li class="range-filter__values-item">6</li>
-                            <li class="range-filter__values-item">7</li>
-                            <li class="range-filter__values-item">8</li>
-                            <li class="range-filter__values-item">9</li>
-                            <li class="range-filter__values-item">10</li>
-                            <li class="range-filter__values-item">11</li>
-                            <li class="range-filter__values-item">12</li>
-                        </ul>
-                    </div>
-                </div>
+              </div>
+            </fieldset>
 
-                <div class="form__percent-info percent-info">
-                    <p class="percent-info__text percent-info__text--title">Процентная&nbsp;ставка</p>
-                    <p class="percent-info__text percent-info__text--info">
-                        <span class="percent-info__percent">0.75%</span>&nbsp;в&nbsp;день
-                    </p>
-                </div>
-
-                <div class="form__input-container">
-                    <label class="form__label" for="date-start">Старт инвестиции</label>
-                    <input class="form__input form__input--date" type="date" name="date-start" id="date-start" value="2022-03-18">
-                </div>
-
-                <div class="form__input-container">                    
-                    <label class="form__label" for="date-end">Завершение инвестиции</label>
-                    <input class="form__input form__input--date" type="date" name="date-end" id="date-end" value="2022-07-18">
-                </div>
+            <div class="form__percent-info percent-info">
+              <p class="percent-info__text percent-info__text--title">Процентная ставка</p>
+              <p class="percent-info__text percent-info__text--info">
+                <span class="percent-info__percent">0.75%</span>&nbsp;в&nbsp;день
+              </p>
             </div>
-            <div class="form__submit-info submit-info">
-                <div class="submit-info__wrapper">
-                    <table class="submit-info__table info-table">
-                        <tr class="info-table__row">
-                            <td class="info-table__cell">Инвестиция</td>
-                            <td class="info-table__cell">10,000 BTC</td>
-                        </tr>
-                        <tr class="info-table__row">
-                            <td class="info-table__cell">Процент прибыли</td>
-                            <td class="info-table__cell">91.5 %</td>
-                        </tr>
-                        <tr class="info-table__row">
-                            <td class="info-table__cell">Прибыль с инвестиции</td>
-                            <td class="info-table__cell info-table__cell--accent">9,150 BTC</td>
-                        </tr>
-                    </table>
-                    <button class="submit-info__button" type="submit">Инвестировать сейчас</button>
-                </div>
+          </div>
+
+          <div class="form__group form__group--date">
+            <fieldset class="form__input-container">
+              <label class="form__label" for="date-start">Старт инвестиции</label>
+              <input class="form__input form__input--date" type="date" name="date-start" id="date-start"
+                value="2022-03-18">
+            </fieldset>
+
+            <fieldset class="form__input-container">
+              <label class="form__label" for="date-end">Завершение инвестиции</label>
+              <input class="form__input form__input--date" type="date" name="date-end" id="date-end" value="2022-07-18">
+            </fieldset>
+          </div>
+        </div>
+
+      </div>
+
+        <div class="form__submit-info submit-info">
+          <div class="submit-info__wrapper">
+            <div class="submit-info__scales">
+              <div class="scale">
+                <p class="scale__info">Ивестировали</p>
+                <p class="scale__sum">10,000 BTC</p>
+                <div class="scale__range"></div>
+              </div>
+              <div class="scale">
+                <p class="scale__info">Получаете</p>
+                <p class="scale__sum">19,150 BTC</p>
+                <div class="scale__range scale__range--result"></div>
+              </div>
             </div>
-        </form>
+
+            <table class="submit-info__table info-table">
+              <tr class="info-table__row">
+                <td class="info-table__cell">Инвестиция</td>
+                <td class="info-table__cell">10,000 BTC</td>
+              </tr>
+              <tr class="info-table__row">
+                <td class="info-table__cell">Процент прибыли</td>
+                <td class="info-table__cell">91.5 %</td>
+              </tr>
+              <tr class="info-table__row">
+                <td class="info-table__cell">Прибыль с инвестиции</td>
+                <td class="info-table__cell info-table__cell--accent">9,150 BTC</td>
+              </tr>
+            </table>
+            <button class="submit-info__button" type="submit">Инвестировать сейчас</button>
+          </div>
+        </div>
+      </form>
     </main>
+
+  <!-- <div class="page__block page__block--addictional">
+    <p>Дополнительная инфа</p>
+  </div> -->
+
 </body>
+
 </html>

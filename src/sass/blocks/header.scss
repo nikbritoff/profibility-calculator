@@ -1,8 +1,6 @@
 .header {
   display: flex;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .header__logo {
@@ -14,6 +12,15 @@
   overflow: hidden;
 }
 
+.header__logo:hover  {
+  background-color: $gray-400;
+}
+
+.header__logo:active  {
+  background-color: $gray-300;
+  box-shadow: inset 1px 1px 10px -1px $black;
+}
+
 .header__logo-icon {
   width: 25px;
   height: 29px;
@@ -22,10 +29,21 @@
 
 .header__title {
   margin: 0;
-  margin-left: 12px;
+  margin-left: 15px;
   padding: 0;
   padding-right: 5px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
+  @media (min-width: $wide-mobile-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
