@@ -1,6 +1,14 @@
 .header {
   display: flex;
   align-items: center;
+
+  @media (min-width: $wide-tablet-width) {
+    padding-left: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .header__logo {
@@ -10,13 +18,17 @@
   border-radius: 9px;
   background-color: $primary-yellow;
   overflow: hidden;
+
+  @media (min-width: $wide-mobile-width) {
+    width: 48px;
+  }
 }
 
-.header__logo:hover  {
+.header__logo:hover {
   background-color: $gray-400;
 }
 
-.header__logo:active  {
+.header__logo:active {
   background-color: $gray-300;
   box-shadow: inset 1px 1px 10px -1px $black;
 }

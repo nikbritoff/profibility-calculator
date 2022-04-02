@@ -25,6 +25,10 @@
   @media (min-width: $wide-tablet-width) {
     padding-top: 90px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 160px;
+  }
 }
 
 .form__wrapper {
@@ -34,7 +38,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-left: 30px;
+    padding-left: 40px;
     padding-right: 50px;
   }
 
@@ -88,6 +92,10 @@
 }
 
 .form__input-container--select {
+  @media (min-width: $wide-mobile-width) {
+    margin-top: 60px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 260px;
     margin-right: 40px;
@@ -104,6 +112,7 @@
   @media (min-width: $tablet-width) {
     width: 360px;
     margin-right: 40px;
+    margin-top: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -203,7 +212,7 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 35px;
+    margin-top: 95px;
   }
 }
 
@@ -213,6 +222,7 @@
 
 .form__percent-info {
   margin-top: 42px;
+  width: 200px;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
@@ -223,6 +233,10 @@
   margin-top: 40px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
+
+  @media (min-width: $wide-tablet-width) {
     margin-top: 0;
   }
 }
